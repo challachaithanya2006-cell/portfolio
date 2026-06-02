@@ -602,7 +602,36 @@
   ::-webkit-scrollbar { width: 4px; }
   ::-webkit-scrollbar-track { background: var(--bg); }
   ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+  /* LAUNCH BADGE */
+.launch-badge{
+  margin-top:1.2rem;
+  display:flex;
+  justify-content:center;
+}
 
+.launch-badge a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,0.03);
+  backdrop-filter:blur(10px);
+  border-radius:4px;
+  transition:all .3s ease;
+}
+
+.launch-badge a:hover{
+  border-color:var(--accent);
+  box-shadow:0 0 20px rgba(0,255,204,.25);
+  transform:translateY(-3px);
+}
+
+.launch-badge img{
+  max-width:220px;
+  width:100%;
+  height:auto;
+}
   /* RESPONSIVE */
   @media (max-width: 900px) {
     nav { padding: 1.2rem 1.5rem; }
@@ -671,6 +700,17 @@
         <div class="card-name">Chaitanya Sai</div>
         <div class="card-role">CSE @ JNTUK UCEN</div>
         <div class="card-uni">JNTUK University College of Engineering Narasaraopet</div>
+        <div class="launch-badge">
+  <a href="https://websitelaunches.com/site/challanagachaitanyasai.xyz"
+     target="_blank"
+     rel="noopener noreferrer">
+    <img
+      src="https://websitelaunches.com/badge/challanagachaitanyasai.xyz.svg"
+      alt="Established online - Public launch record"
+      width="255"
+      height="55">
+  </a>
+</div>
       </div>
     </div>
     <div class="float-tag float-tag-1">⚡ MERN Stack</div>
